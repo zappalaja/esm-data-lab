@@ -23,7 +23,7 @@ keys = list(pages.keys())
 # Find current index
 index = keys.index(current_module) if current_module in keys else 0
 
-selected_label = st.sidebar.radio("", labels, index=index)
+selected_label = st.sidebar.radio("", labels, index=index, key="nav")
 
 # Map label → key
 selected_key = keys[labels.index(selected_label)]
